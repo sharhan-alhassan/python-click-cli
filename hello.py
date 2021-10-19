@@ -5,7 +5,7 @@ def cli():
     pass
 
 
-@cli.command()
+@cli.command(help=' --name (Add name)')
 @click.option('-n', '--name', type=str, help='Name to greet', default='World')
 def hello(name):
     "command: cooltool"
